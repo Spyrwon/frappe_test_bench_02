@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "RIDE-.###.",
+ "creation": "2026-10-23 07:40:15.346265",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "requested_by",
+  "ride_order",
+  "driver",
+  "car",
+  "status",
+  "email",
+  "cancel_booking"
+ ],
+ "fields": [
+  {
+   "fetch_from": "ride_order.requested_by",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "CM Gen Employee"
+  },
+  {
+   "fieldname": "ride_order",
+   "fieldtype": "Link",
+   "label": "Ride Order",
+   "options": "CM Ride Booking"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "CM Driver"
+  },
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "label": "Car",
+   "options": "CM Car"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Requested\nAssigning Driver\nAssigning Vehicle\nConfirmed\nIn Progress\nComplete\nCancelled"
+  },
+  {
+   "fetch_from": "requested_by.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cancel_booking",
+   "fieldtype": "Button",
+   "label": "Cancel Booking"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-23 08:42:39.961236",
+ "modified_by": "Administrator",
+ "module": "car-match",
+ "name": "CM Ride",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

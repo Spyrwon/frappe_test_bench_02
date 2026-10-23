@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "DR-.###.",
+ "creation": "2026-10-23 07:28:26.839222",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_pic",
+  "name1",
+  "email",
+  "mobile_no",
+  "license_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_pic",
+   "fieldtype": "Attach Image",
+   "label": "Profile Pic"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Phone",
+   "label": "Mobile no."
+  },
+  {
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "label": "License No."
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-23 07:29:46.018733",
+ "modified_by": "Administrator",
+ "module": "car-match",
+ "name": "CM Driver",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

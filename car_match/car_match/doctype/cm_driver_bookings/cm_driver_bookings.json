@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "DRBKDT-.###.",
+ "creation": "2026-10-23 08:03:32.947774",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "driver",
+  "date_booked",
+  "ride"
+ ],
+ "fields": [
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "CM Driver"
+  },
+  {
+   "fieldname": "date_booked",
+   "fieldtype": "Date",
+   "label": "Date booked"
+  },
+  {
+   "fieldname": "ride",
+   "fieldtype": "Link",
+   "label": "Ride",
+   "options": "CM Ride"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-23 08:05:03.713750",
+ "modified_by": "Administrator",
+ "module": "car-match",
+ "name": "CM Driver Bookings",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "IITB-.###.",
+ "creation": "2026-10-23 07:24:20.875994",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_pic",
+  "name1",
+  "employee_id",
+  "mobile_no",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_pic",
+   "fieldtype": "Attach Image",
+   "label": "Profile pic"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Phone",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-23 07:25:39.935378",
+ "modified_by": "Administrator",
+ "module": "car-match",
+ "name": "CM Gen Employee",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
